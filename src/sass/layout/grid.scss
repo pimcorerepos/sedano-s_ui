@@ -1,0 +1,28 @@
+.content-wrapper{
+    padding-top: 70px;
+    margin-left: 70px;
+    position: relative;
+    display: block;
+    right: 0;
+    top: 0;
+    min-height: 100vh;
+    transition: all .3s ease-in-out;
+    background: #F0F0F7;
+    .container-fluid{
+        @include padding(25px, 50px, 25px, 50px)
+    }
+    .page-header{
+        @include flex-position(center, space-between, row);
+        h1{
+            font-size:$font-size-medium;
+            color: $dark-blue-color;
+        }
+    }
+    .shadow{
+        @include box-shadow(0px 10px 30px rgba($black-color, 0.16))
+    }
+
+}
+
+
+

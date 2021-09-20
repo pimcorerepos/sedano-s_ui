@@ -1,0 +1,56 @@
+
+@import 'typography.scss';
+@import 'base.scss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+	font-size: $bfSize;
+}
+*:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+  }
+html,
+body {
+    height: 100%;
+}
+body {
+	font-family: $bodyFont;
+	font-weight: $fontWeight;
+	line-height: $blineHeight;
+	color: $bColor;
+    overflow-x: hidden;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: $bodyFont;
+	font-weight: 400;
+}
+
+a,
+a:active,
+a:focus,
+a:hover,
+a:visited {
+	text-decoration: none;
+	outline: 0;	
+}
+img {
+	border: none;
+	max-width: 100%;
+    height: auto;
+}
+
+a:focus {
+    outline:0px solid;
+}
+
+
+

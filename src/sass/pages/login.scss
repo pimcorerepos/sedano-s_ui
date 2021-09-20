@@ -1,0 +1,81 @@
+.loginpage {
+    @include flex-position(center, inherit, column);
+    @include equal-size(100%, auto);
+    @include min-height (100%);
+    background: url('../images/login-bg.png') top left no-repeat;
+    @include position(relative);
+    background-size: cover;
+    z-index: 1;
+    &::before {
+        @include overlay;
+        background: rgba(254, 254, 254, 0.38);
+        z-index: -1;
+    }
+    .logo {
+        @include positionstyle(relative);
+        &.container{
+            @include min-height (auto);
+            background: none;
+            @include padding(70px, 0px, 80px, 0px);
+            margin-bottom: 0px;
+        }
+    }
+    .container {
+        background: $dark-grey-color;
+        @include padding(0px, 100px, 0px, 100px);
+        @include min-height (500px);
+        @include position(relative);
+        z-index: 10;
+        margin-bottom: 100px;
+        // max-width: 1200px;
+        @media screen and (max-width:1199px){
+            @include padding(0px, 50px, 0px, 50px);
+            .btn-large{
+                font-size: $font-size-regular1 ;
+            }
+        }
+
+    }
+    .box {
+        background: $white-color;
+        @include padding(60px, 40px, 40px, 40px);
+        box-shadow: 0px 10px 40px rgba($black-color, 0.16);
+        @include height(560px);
+        @include margin(-40px, 0px, -40px, 0px);
+        .form-control {
+            border: 0px;
+            border-bottom: 1px solid rgba($black-color, 0.16);
+            @include padding(.375rem, .25rem, .375rem, .25rem);
+            font-size: $font-size-regular;
+            &::placeholder {
+                color: $dark-grey-color2;
+            }
+        }
+        label {
+            color: $dark-grey-color2;
+            font-size: $font-size-regular;
+        }
+        p {
+            color: rgba($bColor, 0.6);
+        }
+        a {
+            color: $anchor-color
+        }
+        // @media screen and (max-width: 1366px) {
+        //     @include height (calc(360px + (460 - 360) * ((100vw - 768px) / (1366 - 768))));
+        // }
+    }
+    h1 {
+        @include fontstyle($light-grey-color, $font-size-medium, 1.5rem)
+    }
+    h2 {
+        @include fontstyle($primary-color, $font-size-large, 1.5rem);
+        font-family:$segoeFont;
+    }
+    p {
+        @include fontstyle($light-grey-color, $font-size-small, 1.5rem)
+    }
+
+   
+
+}

@@ -1,0 +1,46 @@
+/* accordion */
+#accordion{
+    margin-top: 30px;
+    .mb-0 > a {
+        display: block;
+        position: relative;
+        color: $dark-blue-color;
+        font-size: $font-size-medium2;
+        &::after {
+            content: "\f054"; /* fa-chevron-down */
+            font-family: $iconFontawesome;
+            position: absolute;
+            right: 0;
+            font-weight: 900;
+            font-size:1rem;
+          }
+          &[aria-expanded="true"]::after {
+            content: "\f078"; /* fa-chevron-up */
+        }
+      }
+      .card{
+        border:0px;
+        @include padding(10px, 15px, 10px, 15px);
+        margin-bottom: 20px;
+        @include box-shadow(0px 2px 6px rgba($black-color, 0.04));
+        @include border-radius(0px);
+        .card-header{
+            background:$white-color;
+            border-bottom:1px solid $medium-grey-color;
+            @include padding(1rem, 0, 1rem, 0);
+            @include border-radius(0px);
+        }
+        .card-body{
+                @include padding(1.5rem, 0, 0.25rem, 0);
+                h3{
+                    font-size: $font-size-small;
+                    color: $dark-blue-color;
+                    margin-top: 0.75rem;
+                    &:first-child{
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+}
+

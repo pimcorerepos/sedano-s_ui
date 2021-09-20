@@ -1,0 +1,78 @@
+
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition; 
+    transition: $transition;
+}
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+}
+
+@mixin box-shadow($shadow-value) {
+    -webkit-box-shadow: $shadow-value;
+    -o-box-shadow: $shadow-value;
+    -moz-box-shadow: $shadow-value;
+    -ms-box-shadow: $shadow-value;    
+    box-shadow: $shadow-value;
+}
+
+
+@mixin flex-position($items, $justifycontent, $direction) {
+    display: flex;
+	align-items: $items;
+    justify-content: $justifycontent;
+    flex-direction: $direction;
+
+}
+
+@mixin position($position) {
+	position: $position;
+}
+
+@mixin equal-size($width, $height: $width) {
+	width: $width;
+	height: $height;
+}
+
+@mixin overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+    @include equal-size(100%, 100%);
+    content: '';
+}
+
+
+@mixin width($width) {
+	width: $width;
+}
+@mixin height($height) {
+    height: $height;
+}
+@mixin min-height($minheight) {
+    min-height: $minheight;
+}
+
+@mixin padding($ptop, $pright, $pbottom, $pleft) {
+    padding: $ptop $pright $pbottom $pleft;
+   
+}
+@mixin margin($mtop, $mright, $mbottom, $mleft) {
+    margin: $mtop $mright $mbottom $mleft;
+}
+
+@mixin fontstyle($color, $fontsize, $marginbottom){
+    color: $color;
+    font-size: $fontsize;
+    margin-bottom:$marginbottom;
+}
+
+@mixin  positionstyle($position) {
+    position: $position;
+    top:0;
+    left:0;
+    width: 100%;
+}

@@ -1,0 +1,99 @@
+
+.btn{
+    @include padding(0.375rem, 0.75rem, 0.375rem, 0.75rem);
+
+    @include border-radius(0px);
+    &{
+        margin-right: 0.75rem;
+    }
+    &:last-child{
+        margin-right: 0rem;
+    }
+
+}
+
+.btn-primary-color {
+	background-color: $primary-color;
+    color:  $white-color;
+    border:1px solid $red-color;
+	&,
+	&:link,
+	&:visited {
+	    color:  $white-color;
+	}
+
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: rgba($primary-color, .9);
+        color:  $white-color;
+	}
+}
+.btn-blue-color {
+	background-color: $blue-color;
+    color:  $white-color;
+    border:0px;
+    @include border-radius(4px);
+	&,
+	&:link,
+	&:visited {
+	    color:  $white-color;
+	}
+
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: rgba($blue-color, .9);
+        color:  $white-color;
+	}
+}
+
+
+.btn-grey-border-color {
+    font-size: $font-size-small;
+    border-color:$light-grey-color;
+  
+	&,
+	&:link,
+	&:visited {
+        color: $light-grey-color;
+
+	}
+
+	&:hover,
+	&:active,
+	&:focus {
+        color: $light-grey-color;
+
+	}
+}
+
+.btn-white-border-color {
+    font-size: $font-size-small;
+    border-color:$red-color;
+    background: $white-color;
+	&,
+	&:link,
+	&:visited {
+        color: $primary-color;
+
+	}
+
+	&:hover,
+	&:active,
+	&:focus {
+        color: $primary-color;
+
+	}
+}
+
+
+.btn-large{
+    @include padding(0.375rem, 2rem, 0.5rem, 2rem);
+    font-size: $font-size-small;
+}
+.btn-medium{
+    @include padding(0.375rem, 2rem, 0.5rem, 2rem);
+    font-size: $font-size-regular;
+    min-width: 150px;
+}

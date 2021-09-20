@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sedano's</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=auto" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="sidebar">
+            <div class="sedano-logo"><a href="#" ><img src="images/sedano-logo.png" class="img-fluid" /></a></div>
+        </nav>
+        <header class="header">
+        </header>
+        <div class="content-wrapper">
+            <div class="container-fluid">
+                <div class="page-header">
+                    <h1>Sign Up</h1>
+                    <div class="">
+                        <a href="#" class="btn btn-primary-color btn-large shadow">Submit</a>
+                        <a href="#" class="btn btn-white-border-color btn-large shadow">Login</a>
+                    </div>
+                </div>
+
+                <!-- Accordion start -->
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="heading-1">
+                            <h3 class="mb-0">
+                                <a role="button" data-toggle="collapse" href="#collapse-1" aria-expanded="true"
+                                    aria-controls="collapse-1">
+                                    Basic Detail
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse-1" class="collapse show" data-parent="#accordion" aria-labelledby="heading-1">
+                            <div class="card-body">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputAddress">Company Name <span<span class="star">*</span></span></label>
+                                            <input type="text" class="form-control" id="inputAddress">
+                                        </div>
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputAddress2">D/B/A</label>
+                                            <input type="text" class="form-control" id="inputAddress2">
+                                        </div>
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputEmail4">Email</label>
+                                            <input type="email" class="form-control" id="inputEmail4">
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <label class="custom-control-label" for="customCheck1">I agree with terms and conditions <span class="star">*</span></label>
+                                          </div>
+                                        
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading-2">
+                            <h3 class="mb-0">
+                                <a role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="true"
+                                    aria-controls="collapse-2">
+                                    Address Information
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse-2" class="collapse show" data-parent="#accordion" aria-labelledby="heading-2">
+                            <div class="card-body">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputAddress">Address<span class="star">*</span></label>
+                                            <input type="text" class="form-control" id="inputAddress">
+                                        </div>
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputAddress2">Zip code<span class="star">*</span></label>
+                                            <input type="text" class="form-control" id="inputAddress2">
+                                        </div>
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputEmail4">City<span class="star">*</span></label>
+                                            <input type="text" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputEmail4">State<span class="star">*</span></label>
+                                            <span class="form-select">
+                                                <select class="form-control" id="inputEmail4">
+                                                    <option value="">abc</option>
+                                                    <option value="">xyz </option>
+                                                </select>
+                                            </span>
+                                        </div>
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputEmail4">Business Phone</label>
+                                            <input type="text" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputEmail4">Business Fax</label>
+                                            <input type="text" class="form-control" id="inputEmail4">
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading-3">
+                            <h3 class="mb-0">
+                                <a role="button" data-toggle="collapse" href="#collapse-3" aria-expanded="true"
+                                    aria-controls="collapse-3">
+                                    Company Information
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse-3" class="collapse show" data-parent="#accordion" aria-labelledby="heading-3">
+                            <div class="card-body">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputAddress">CIO Number<span class="star">*</span></label>
+                                            <input type="text" class="form-control" id="inputAddress">
+                                        </div>
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="date">CIO EXP Date<span class="star">*</span></label>
+                                            <div id="cioexp-date" class="date">
+                                            <input type="text" class="form-control" id="due_date"  required="true" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputEmail4">Company Type Ownership</label>
+                                            <input type="text" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputEmail4">State of Incorporation</label>
+                                            <input type="text" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputEmail4">AP Name</label>
+                                            <input type="text" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputEmail4">AP Email</label>
+                                            <input type="text" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputEmail4">AP Business Phone</label>
+                                            <input type="text" class="form-control" id="inputEmail4">
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading-4">
+                            <h3 class="mb-0">
+                                <a role="button" data-toggle="collapse" href="#collapse-4" aria-expanded="true"
+                                    aria-controls="collapse-4">
+                                    Payment Information
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse-4" class="collapse show" data-parent="#accordion" aria-labelledby="heading-4">
+                            <div class="card-body">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputAddress">Payment Terms<span class="star">*</span></label>
+                                            <span class="form-select">
+                                                <select class="form-control" id="inputAddress">
+                                                    <option value=""></option>
+                                                </select>
+                                            </span>
+                                        </div>
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputAddress2">Fulfillment Type<span class="star">*</span></label>
+                                            <span class="form-select">
+                                                <select class="form-control" id="inputAddress2">
+                                                    <option value=""></option>
+                                                </select>
+                                            </span>
+                                        </div>
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputEmail4">Departments in your catalog</label>
+                                            <span class="form-select">
+                                                <select class="form-control" id="inputEmail4">
+                                                    <option value=""></option>
+                                                </select>
+                                            </span>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading-5">
+                            <h3 class="mb-0">
+                                <a role="button" data-toggle="collapse" href="#collapse-5" aria-expanded="true"
+                                    aria-controls="collapse-5">
+                                    Business References
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse-5" class="collapse show" data-parent="#accordion" aria-labelledby="heading-5">
+                            <div class="card-body">
+                                <h3>First</h3>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputAddress">Name</label>
+                                            <input type="text" class="form-control" id="inputAddress">
+                                        </div>
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputAddress2">Address</label>
+                                            <input type="text" class="form-control" id="inputAddress2">
+                                        </div>
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputEmail4">City</label>
+                                            <input type="text" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputEmail4">State</label>
+                                            <span class="form-select">
+                                                <select class="form-control" id="inputEmail4">
+                                                    <option value=""></option>
+                                                </select>
+                                            </span>
+                                        </div>
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputEmail4">Zip Code</label>
+                                            <input type="text" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputEmail4">Phone</label>
+                                            <input type="text" class="form-control" id="inputEmail4">
+                                        </div>
+                                    </div>
+                                    <h3>Second</h3>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputAddress">Name</label>
+                                            <input type="text" class="form-control" id="inputAddress">
+                                        </div>
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputAddress2">Address</label>
+                                            <input type="text" class="form-control" id="inputAddress2">
+                                        </div>
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputEmail4">City</label>
+                                            <input type="text" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputEmail4">State</label>
+                                            <span class="form-select">
+                                                <select class="form-control" id="inputEmail4">
+                                                    <option value=""></option>
+                                                </select>
+                                            </span>
+                                        </div>
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputEmail4">Zip Code</label>
+                                            <input type="text" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputEmail4">Phone</label>
+                                            <input type="text" class="form-control" id="inputEmail4">
+                                        </div>
+                                    </div>
+                                    <h3>Third</h3>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputAddress">Name</label>
+                                            <input type="text" class="form-control" id="inputAddress">
+                                        </div>
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputAddress2">Address</label>
+                                            <input type="text" class="form-control" id="inputAddress2">
+                                        </div>
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputEmail4">City</label>
+                                            <input type="text" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputEmail4">State</label>
+                                            <span class="form-select">
+                                                <select class="form-control" id="inputEmail4">
+                                                    <option value=""></option>
+                                                </select>
+                                            </span>
+                                        </div>
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputEmail4">Zip Code</label>
+                                            <input type="text" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="form-group col-md-4 col-lg-3">
+                                            <label for="inputEmail4">Phone</label>
+                                            <input type="text" class="form-control" id="inputEmail4">
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading-6">
+                            <h3 class="mb-0">
+                                <a role="button" data-toggle="collapse" href="#collapse-6" aria-expanded="true"
+                                    aria-controls="collapse-6">
+                                    Required Documents
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse-6" class="collapse show" data-parent="#accordion" aria-labelledby="heading-6">
+                            <div class="card-body">
+                                        <div class="form-group">
+                                            <p class="mb-1">Vendor agreement<span class="star">*</span></p>
+                                            <button type="submit" class="btn btn-blue-color btn-medium mr-3">Download</button>
+                                            <small id="passwordHelpInline" class="text-download">
+                                                Download, Sign and Upload
+                                            </small>
+                                        </div>
+                                        <div class="form-group">
+                                            <p class="mb-1">Certificate of Liability Insurance<span class="star">*</span></p>
+                                            <div class="uploadfile">
+                                            <button type="submit" class="btn btn-blue-color btn-medium" type="file">Choose File</button>
+                                            <input type="file" name="myfile" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <p class="mb-1">W-9<span class="star">*</span></p>
+                                            <div class="uploadfile">
+                                                <button type="submit" class="btn btn-blue-color btn-medium" type="file">Choose File</button>
+                                                <input type="file" name="myfile" />
+                                                </div>
+
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Accordion End -->
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script type="text/javascript">
+     // INITIALIZE DATEPICKER PLUGIN
+     $( "#due_date" ).datepicker({
+         minDate: '0',
+         dateFormat: 'dd/mm/yy',         
+         showOn: "both",                  
+         buttonText: '<i class="far fa-calendar-alt"></i>',
+        });   
+   
+      
+
+  </script>
+</body>
+
+</html>
